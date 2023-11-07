@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let str1 = prompt("Enter first string: ");
+    document.write("String 1 is :",str1,"<br>");
+    let str2 = prompt("Enter second string: ");
+    document.write("String 2 is :",str2,"<br>");
+    
+    if(str1.toUpperCase==str2.toUpperCase){
+        document.write("Strings are equal <br>");
+    }
+    else{
+        document.write("Strings are not equal <br>");
+    }
+
+    function compareStrings1(str1,str2){
+        let result = str1.localeCompare(str2);
+        if(result==0){
+            document.write("Strings are equal <br>");
+        }
+        else if(result<0){
+            document.write("str1 comes before str2 <br>");
+        }
+        else {
+            document.write("str2 comes before str1 <br>");
+        }
+    }
+    compareStrings1(str1,str2);
+    
+    function compareStrings2(str1,str2){
+        if(str1.length != str2.length){
+            document.write("Strings are not equal <br>");
+        }
+        for(let i=0; i<str1.length; i++){
+            if(str1[i]!=str2[i]){
+                document.write("Strings are not equal <br>");           
+            }
+        }
+        document.write("Strings are  equal <br>");
+    }
+    compareStrings2(str1,str2);
+    </script>
+    
+</body>
+</html>

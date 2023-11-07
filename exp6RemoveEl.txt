@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function remove(array,n){
+            let temp = [];
+            for(let i=0; i<array.length; i++){
+                if(array[i]!=n){
+                  temp.push(arr[i]);
+                }
+            }
+            return temp;
+        }
+
+        let arr = [1,2,3,4,5];
+        document.write(arr,"<br/>");
+        let arr2 =   remove(arr,4);
+        document.write(arr2);
+    </script>
+</body>
+</html>>

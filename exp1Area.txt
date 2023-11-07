@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let b = 4,
+            h = 3,
+            r = 4;
+        let Area_of_Triangle = 1 / 2 * b * h;
+        let Area_of_Rectangle = b * h;
+        let Area_of_Circle = 3.14 * r * r;
+        document.write("Area of Triangle is: ", Area_of_Triangle);
+        document.write("<br>");
+        document.write("Area of Rectangle is: ", Area_of_Rectangle);
+        document.write("<br>");
+        document.write("Area of Circle is: ", Area_of_Circle);
+    </script>
+</body>
+</html>

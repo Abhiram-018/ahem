@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function check(arr1,element){
+            for(let i=0; i<=arr1.length-1; i++){
+                if(arr1[i]==element){
+                    document.write("value is present at index",i);
+                }
+            }
+        }
+
+        let arr1 = [1,2,3,4,5];
+        check(arr1,4);
+    </script>
+</body>
+</html>
